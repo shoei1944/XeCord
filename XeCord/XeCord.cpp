@@ -15,6 +15,8 @@
 #define CONSOLE_TYPE_CORONA 0x50000000
 #define CONSOLE_TYPE_WINCHESTER 0x60000000
 
+// Delel
+
 #define CONSOLE_TYPE_FLAGS_MASK (0xF0000000)
 #define CONSOLE_TYPE_FROM_FLAGS                                                \
 	(XboxHardwareInfo->Flags & CONSOLE_TYPE_FLAGS_MASK)
@@ -780,9 +782,10 @@ bool SendPresenceUpdate(DiscordState *state, uint32_t titleId) {
 		}
 	}
 
+	// Fast fix
 	if (finalTitleId == 0x00000166) // Aurora
 	{
-		finalGameName = "Aurora";
+		finalGameName = "Idle";
 		finalLargeImage =
 		    "mp:app-assets/1410522131762253927/1410523603815895132.png";
 		finalSmallImage =
@@ -791,7 +794,7 @@ bool SendPresenceUpdate(DiscordState *state, uint32_t titleId) {
 		        : "";
 	} else if (finalTitleId == 0x00000167) // Freestyle 3
 	{
-		finalGameName = "Freestyle 3";
+		finalGameName = "Idle";
 		finalLargeImage =
 		    "mp:app-assets/1410522131762253927/1410522692414738493.png";
 		finalSmallImage =
@@ -800,7 +803,7 @@ bool SendPresenceUpdate(DiscordState *state, uint32_t titleId) {
 		        : "";
 	} else if (finalTitleId == 0xFFFE07D1) // Xbox 360 Dashboard
 	{
-		finalGameName = "Xbox 360 Dashboard";
+		finalGameName = "Idle";
 		finalLargeImage =
 		    "mp:app-assets/1410522131762253927/1417550167074406711.png";
 		finalSmallImage = "";
@@ -834,7 +837,7 @@ bool SendPresenceUpdate(DiscordState *state, uint32_t titleId) {
 	std::stringstream profileinfos;
 
 	if (g_ShowProfile) {
-		profileinfos << "\"state\":\"Profile: " << GetSafeGamertag() << "\",";
+		profileinfos << "\"state\":\"" << GetSafeGamertag() << "\",";
 	}
 
 	std::string profileinfo = profileinfos.str();
@@ -845,7 +848,7 @@ bool SendPresenceUpdate(DiscordState *state, uint32_t titleId) {
 		addinfos << "\"details\":\"" << g_ConsoleName;
 
 		if (g_ShowConsoleType) {
-			addinfos << " " << "(" << GetConsoleType() << ")";
+			addinfos << " "; // << Delete console model here
 		}
 
 		if (g_ShowKernelVersion) {
