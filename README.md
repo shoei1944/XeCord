@@ -25,6 +25,11 @@ An **Xbox 360 Discord Rich Presence Plugin (Simplify)**.
 4. **Вставьте** `XeCord.ini` и `XeCordTitles.bin` в ту же папку, что и `XeCord.xex`.
 5. **Добавьте** `XeCord.xex` в `launch.ini` в лист плагинов.
 
+## Сборка
+1. Установите Visual Studio 2010 и Xbox SDK
+2. Скачайте проект (git clone --recursive https://github.com/shoei1944/XeCord)
+3. Откройте его через VS 2010, выберите Release_91D00000, сборка для Xbox 360, и выполните Build Solution/Rebuild Solution
+
 ## Скриншоты
 
 <img width="355" height="160" alt="image" src="./assets/1.png" /> <img width="355" height="160" alt="image" src="./assets/2.png" />
