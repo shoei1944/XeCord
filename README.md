@@ -1,69 +1,56 @@
-# XeCord
+# XeCord Fork
 
-An **Xbox 360 Discord Rich Presence Plugin**.
+An **Xbox 360 Discord Rich Presence Plugin (Simplify)**.
 
-> ⚙️ **Note:** Works only on **hacked Xbox 360 consoles**. If your console is not hacked, see [Related Projects](#-related-projects) for alternatives.
->
-> 🎮 **Xbox Original Games Support:** Titles are supported but unlike 360 games, most lack assets and will display the default Xbox Original icon instead.
->
-> Most images and assets are sourced from **[XboxUnity.net](https://xboxunity.net)**.
+> ⚠️ Внимание:
+> Проект использует **Discord User Gateway** и нарушает **Discord’s Terms of Service**.  
+> Используйте только **на свой страх и риск**.  
 
-> ⚠️ Warning:
-> This uses the **Discord User Gateway** and is therefore **against Discord’s Terms of Service**.  
-> You may use this **at your own risk**.  
-> That said, people have been using custom Direct User Gateway Rich Presences for **4–5 years** with no known cases of account termination.
+## Возможности
 
-## ✨ Features
+- **Обвновления в реальном времени:** Обновляет игровой статус Discord автоматически в режиме реального времени — не требуется подключение к ПК или ручное обновление.
 
-- **Standalone Real-Time Updates:** Updates Discord Rich Presence automatically in real-time—no PC bridge or manual refreshing required.
+- **Поддержка:** Поддерживает обширную библиотеку игр прямо из коробки.
 
-- **Extensive Compatibility:** Supports a vast library of games out of the box.
+- **Кастомизация:** Настройка отображения своего профиля по своему вкусу. Выбор простого текстового варианта (аналогичный интерфейсу активности на Xbox One/Series) или подробный режим с обложками игр, статистикой профиля и информацией о консоли.
 
-- **Fully Customizable:** Tailor your presence to your preference. Choose a minimalist text-only look (similar to Xbox One/Series Activity) or a detailed display featuring game art, profile stats, and console information.
+## Установка
 
-## 🔧 Setup
+1. **Скачайте** [Xbdm.xex](https://consolemods.org/wiki/File:Xbdm.xex) и добавьте как **первый плагин в `launch.ini`**.
+2. **Скачайте** послежний релиз [Releases](https://github.com/shoei1944/XeCord/releases).
+3. **Измените** `XeCord.ini` перед тем как вставить:
+   - Добавьте ваш **Discord User Token** в `XeCord.ini`.
+   - Измените параметры если нужно.
+   - Примените изменения.
+4. **Вставьте** `XeCord.ini` и `XeCordTitles.bin` в ту же папку, что и `XeCord.xex`.
+5. **Добавьте** `XeCord.xex` в `launch.ini` в лист плагинов.
 
-1. **Download** [Xbdm.xex](https://consolemods.org/wiki/File:Xbdm.xex) and add it as the **first plugin in `launch.ini`**.
-2. **Download** the latest build from the [Releases](https://github.com/UncreativeXenon/XeCord/releases) section.
-3. **Edit** `XeCord.ini` before moving it:
-   - Add your **Discord User Token** to `XeCord.ini`.
-   - Configure other options to your preference.
-   - Save your changes.
-4. **Place** `XeCord.ini` and `XeCordTitles.bin` in the same folder as `XeCord.xex`.
-5. **Add** `XeCord.xex` to `launch.ini` plugin list.
-
-## 🖼️ Screenshots
+## Скриншоты
 
 <img width="355" height="160" alt="image" src="./assets/1.png" /> <img width="355" height="160" alt="image" src="./assets/2.png" />
 <img width="355" height="160" alt="image" src="./assets/3.png" /> <img width="355" height="160" alt="image" src="./assets/4.png" />
 <img width="355" height="160" alt="image" src="./assets/5.png" /> <img width="355" height="160" alt="image" src="./assets/6.png" />
 <img width="355" height="160" alt="image" src="./assets/7.png" /> <img width="355" height="160" alt="image" src="./assets/8.png" />
 
-## 🛠️ Troubleshooting
+## Помощь
 
-- Q: **_"Some people cannot see my activity although I can."_**\
-  A: Make sure your Activity Privacy options are set to "Share in all servers".
+- Q: **_"Некоторые люди не видят мою активность, хотя я сам её вижу.."_**\
+  A: Убедитесь, что в параметрах конфиденциальности вашей активности установлено значение «Поделиться на всех серверах».
   ![Activity Privacy Settings](./assets/privacy-all-servers.png)
 
-## 🐞 Issues
+## Проблемы
 
-- If you encounter issues, please open an issue with logs or reproduction steps.
+- Если у вас возникнут проблемы, пожалуйста, создайте заявку с логами или описанием шагов для воспроизведения проблемы.
 
-## 🔗 Related Projects
+## Похожие проекты
 
-If you’re interested in similar projects or supporting them, check these out:
+Если вас интересуют подобные проекты или вы хотите их поддержать, ознакомьтесь с этими гитами:
 
 - [Xbox-Rich-Presence-Discord](https://github.com/MrCoolAndroid/Xbox-Rich-Presence-Discord) by [MrCoolAndroid](https://github.com/MrCoolAndroid)
 - [XboxUnity-Scraper](https://github.com/UncreativeXenon/XboxUnity-Scraper)
 
-## 🤝 Contributions
-
-- This is mostly a personal project, but contributions and suggestions are welcome.
-- Feel free to fork and modify it as needed.
-
-## 🙌 Thanks To
-
-A big thank you to the following communities and resources for their contributions and support:
+## Спасибо!
+Выражаем огромную благодарность следующим сообществам и ресурсам за их вклад и поддержку:
 
 - [XexUtils](https://github.com/ClementDreptin/XexUtils) by [ClementDreptin](https://github.com/ClementDreptin)
 - [Byrom](https://github.com/Byrom90) for mount paths (lol)
